@@ -1,0 +1,7 @@
+---
+firewall_rules:
+  #
+  - zone: internal
+    service: http
+  - zone: internal
+    source: "172.25.250.10"

@@ -1,0 +1,10 @@
+---
+- name: Ensuring the content is deployed
+  ansible.builtin.copy:
+    content: "{{ webapp_message_prefix }} {{ inventory_hostname }}.
+             (version {{ webapp_version }})\n"
+    dest: /var/www/html/index.html
+    mode: 0644
+    owner: root
+    group: root
+    setype: httpd_sys_content_t

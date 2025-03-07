@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  remote_user: root
+
+  tasks:
+    - name: Ensure the firewall is configured
+      ansible.builtin.include_role:
+        name: firewall
+      vars:
+        firewall_rules:
+          - service: https

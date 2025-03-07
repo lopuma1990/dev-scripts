@@ -1,0 +1,26 @@
+---
+# Log-level for HAProxy logs
+haproxy_log_level: info
+
+# Port exposed to clients
+haproxy_port: 80
+
+# Name for the default back end
+haproxy_backend_name: app
+
+# The haproxy_appservers variable is a list of back-end servers that provide
+# the web service proxied by HAProxy. For each server you must provide a name,
+# the IP address, and the TCP port.
+#
+# Example:
+#
+# haproxy_appservers:
+#   - name: www1.example.com
+#     ip: 1.2.3.4
+#     port: 5000
+#   - name: www2.example.com
+#     ip: 1.2.3.5
+#     port: 5000
+#
+# By default no back-end servers are defined.
+haproxy_appservers: []

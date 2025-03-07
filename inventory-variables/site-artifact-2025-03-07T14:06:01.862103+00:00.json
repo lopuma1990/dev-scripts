@@ -1,0 +1,210 @@
+{
+    "plays": [
+        {
+            "__play_name": "Ensuring HAProxy is deployed",
+            "name": "Ensuring HAProxy is deployed",
+            "pattern": "lb_servers",
+            "play": "Ensuring HAProxy is deployed",
+            "play_pattern": "lb_servers",
+            "play_uuid": "c6320945-df55-6f36-9015-000000000006",
+            "playbook": "/home/student/inventory-variables/site.yml",
+            "playbook_uuid": "f549aaf3-198c-44ab-924c-4f0cb77ccac0",
+            "tasks": [],
+            "uuid": "c6320945-df55-6f36-9015-000000000006"
+        },
+        {
+            "__play_name": "Ensuring Apache HTTP Server is deployed",
+            "name": "Ensuring Apache HTTP Server is deployed",
+            "pattern": "web_servers",
+            "play": "Ensuring Apache HTTP Server is deployed",
+            "play_pattern": "web_servers",
+            "play_uuid": "c6320945-df55-6f36-9015-00000000000b",
+            "playbook": "/home/student/inventory-variables/site.yml",
+            "playbook_uuid": "f549aaf3-198c-44ab-924c-4f0cb77ccac0",
+            "tasks": [],
+            "uuid": "c6320945-df55-6f36-9015-00000000000b"
+        },
+        {
+            "__play_name": "Ensuring web content is deployed",
+            "name": "Ensuring web content is deployed",
+            "pattern": "web_servers",
+            "play": "Ensuring web content is deployed",
+            "play_pattern": "web_servers",
+            "play_uuid": "c6320945-df55-6f36-9015-000000000010",
+            "playbook": "/home/student/inventory-variables/site.yml",
+            "playbook_uuid": "f549aaf3-198c-44ab-924c-4f0cb77ccac0",
+            "tasks": [],
+            "uuid": "c6320945-df55-6f36-9015-000000000010"
+        }
+    ],
+    "settings_entries": {
+        "ansible-navigator": {
+            "ansible": {
+                "config": {
+                    "help": false,
+                    "path": "./ansible.cfg"
+                },
+                "doc": {
+                    "help": false,
+                    "plugin": {
+                        "type": "module"
+                    }
+                },
+                "inventory": {
+                    "entries": [
+                        "/home/student/inventory-variables/inventory.yml"
+                    ],
+                    "help": false
+                },
+                "playbook": {
+                    "help": false,
+                    "path": "/home/student/inventory-variables/site.yml"
+                }
+            },
+            "ansible-builder": {
+                "help": false,
+                "workdir": "/home/student/inventory-variables"
+            },
+            "app": "run",
+            "collection-doc-cache-path": "/home/student/.cache/ansible-navigator/collection_doc_cache.db",
+            "color": {
+                "enable": true,
+                "osc4": true
+            },
+            "editor": {
+                "command": "vi +{line_number} {filename}",
+                "console": true
+            },
+            "exec": {
+                "command": "/bin/bash",
+                "shell": true
+            },
+            "execution-environment": {
+                "container-engine": "podman",
+                "enabled": true,
+                "image": "ee-supported-rhel8:latest",
+                "pull": {
+                    "policy": "missing"
+                }
+            },
+            "images": {
+                "details": [
+                    "everything"
+                ]
+            },
+            "logging": {
+                "append": true,
+                "file": "/dev/null",
+                "level": "warning"
+            },
+            "mode": "stdout",
+            "playbook-artifact": {
+                "enable": true,
+                "save-as": "{playbook_dir}/{playbook_name}-artifact-{time_stamp}.json"
+            },
+            "settings": {
+                "effective": false,
+                "sample": false,
+                "schema": "json",
+                "sources": false
+            },
+            "time-zone": "UTC"
+        }
+    },
+    "settings_sources": {
+        "ansible-navigator.ansible-builder.help": "Defaults",
+        "ansible-navigator.ansible-builder.workdir": "Defaults",
+        "ansible-navigator.ansible-lint.config": "Not set",
+        "ansible-navigator.ansible-lint.lintables": "Not set",
+        "ansible-navigator.ansible-runner.artifact-dir": "Not set",
+        "ansible-navigator.ansible-runner.rotate-artifacts-count": "Not set",
+        "ansible-navigator.ansible-runner.timeout": "Not set",
+        "ansible-navigator.ansible.cmdline": "Not set",
+        "ansible-navigator.ansible.config.help": "Defaults",
+        "ansible-navigator.ansible.config.path": "Settings file",
+        "ansible-navigator.ansible.doc.help": "Defaults",
+        "ansible-navigator.ansible.doc.plugin.name": "Not set",
+        "ansible-navigator.ansible.doc.plugin.type": "Defaults",
+        "ansible-navigator.ansible.inventory.entries": "Ansible configuration file",
+        "ansible-navigator.ansible.inventory.help": "Defaults",
+        "ansible-navigator.ansible.playbook.help": "Defaults",
+        "ansible-navigator.ansible.playbook.path": "Command line",
+        "ansible-navigator.app": "Command line",
+        "ansible-navigator.collection-doc-cache-path": "Defaults",
+        "ansible-navigator.color.enable": "Defaults",
+        "ansible-navigator.color.osc4": "Defaults",
+        "ansible-navigator.editor.command": "Defaults",
+        "ansible-navigator.editor.console": "Defaults",
+        "ansible-navigator.exec.command": "Defaults",
+        "ansible-navigator.exec.shell": "Defaults",
+        "ansible-navigator.execution-environment.container-engine": "Automatically determined",
+        "ansible-navigator.execution-environment.container-options": "Not set",
+        "ansible-navigator.execution-environment.enabled": "Defaults",
+        "ansible-navigator.execution-environment.environment-variables.pass": "Not set",
+        "ansible-navigator.execution-environment.environment-variables.set": "Not set",
+        "ansible-navigator.execution-environment.image": "Settings file",
+        "ansible-navigator.execution-environment.pull.arguments": "Not set",
+        "ansible-navigator.execution-environment.pull.policy": "Settings file",
+        "ansible-navigator.execution-environment.volume-mounts": "Not set",
+        "ansible-navigator.images.details": "Defaults",
+        "ansible-navigator.inventory-columns": "Not set",
+        "ansible-navigator.logging.append": "Defaults",
+        "ansible-navigator.logging.file": "Settings file",
+        "ansible-navigator.logging.level": "Defaults",
+        "ansible-navigator.mode": "Command line",
+        "ansible-navigator.playbook-artifact.enable": "Defaults",
+        "ansible-navigator.playbook-artifact.replay": "Not set",
+        "ansible-navigator.playbook-artifact.save-as": "Defaults",
+        "ansible-navigator.settings.effective": "Defaults",
+        "ansible-navigator.settings.sample": "Defaults",
+        "ansible-navigator.settings.schema": "Defaults",
+        "ansible-navigator.settings.sources": "Defaults",
+        "ansible-navigator.time-zone": "Defaults",
+        "settings_file_path": "/home/student/inventory-variables/ansible-navigator.yml",
+        "settings_file_source": "Search path"
+    },
+    "status": "successful",
+    "status_color": 10,
+    "stdout": [
+        "\u001b[1;35m[WARNING]:  * Failed to parse /home/student/inventory-variables/inventory.yml\u001b[0m",
+        "\u001b[1;35mwith auto plugin: We were unable to read either as JSON nor YAML, these are the\u001b[0m",
+        "\u001b[1;35merrors we got from each: JSON: Expecting value: line 1 column 1 (char 0)\u001b[0m",
+        "\u001b[1;35mSyntax Error while loading YAML.   mapping values are not allowed in this\u001b[0m",
+        "\u001b[1;35mcontext  The error appears to be in '/home/student/inventory-\u001b[0m",
+        "\u001b[1;35mvariables/inventory.yml': line 4, column 44, but may be elsewhere in the file\u001b[0m",
+        "\u001b[1;35mdepending on the exact syntax problem.  The offending line appears to be:\u001b[0m",
+        "\u001b[1;35mload_balancer:       ansible_host: servera.lab.example.com:\u001b[0m",
+        "\u001b[1;35m^ here\u001b[0m",
+        "\u001b[1;35m[WARNING]:  * Failed to parse /home/student/inventory-variables/inventory.yml\u001b[0m",
+        "\u001b[1;35mwith yaml plugin: We were unable to read either as JSON nor YAML, these are the\u001b[0m",
+        "\u001b[1;35merrors we got from each: JSON: Expecting value: line 1 column 1 (char 0)\u001b[0m",
+        "\u001b[1;35mSyntax Error while loading YAML.   mapping values are not allowed in this\u001b[0m",
+        "\u001b[1;35mcontext  The error appears to be in '/home/student/inventory-\u001b[0m",
+        "\u001b[1;35mvariables/inventory.yml': line 4, column 44, but may be elsewhere in the file\u001b[0m",
+        "\u001b[1;35mdepending on the exact syntax problem.  The offending line appears to be:\u001b[0m",
+        "\u001b[1;35mload_balancer:       ansible_host: servera.lab.example.com:\u001b[0m",
+        "\u001b[1;35m^ here\u001b[0m",
+        "\u001b[1;35m[WARNING]:  * Failed to parse /home/student/inventory-variables/inventory.yml\u001b[0m",
+        "\u001b[1;35mwith ini plugin: Invalid host pattern 'lb_servers:' supplied, ending in ':' is\u001b[0m",
+        "\u001b[1;35mnot allowed, this character is reserved to provide a port.\u001b[0m",
+        "\u001b[1;35m[WARNING]: Unable to parse /home/student/inventory-variables/inventory.yml as\u001b[0m",
+        "\u001b[1;35man inventory source\u001b[0m",
+        "\u001b[1;35m[WARNING]: No inventory was parsed, only implicit localhost is available\u001b[0m",
+        "\u001b[1;35m[WARNING]: provided hosts list is empty, only localhost is available. Note that\u001b[0m",
+        "\u001b[1;35mthe implicit localhost does not match 'all'\u001b[0m",
+        "\u001b[1;35m[WARNING]: Could not match supplied host pattern, ignoring: lb_servers\u001b[0m",
+        "",
+        "PLAY [Ensuring HAProxy is deployed] ********************************************",
+        "\u001b[0;36mskipping: no hosts matched\u001b[0m",
+        "\u001b[1;35m[WARNING]: Could not match supplied host pattern, ignoring: web_servers\u001b[0m",
+        "",
+        "PLAY [Ensuring Apache HTTP Server is deployed] *********************************",
+        "\u001b[0;36mskipping: no hosts matched\u001b[0m",
+        "",
+        "PLAY [Ensuring web content is deployed] ****************************************",
+        "\u001b[0;36mskipping: no hosts matched\u001b[0m",
+        "",
+        "PLAY RECAP *********************************************************************"
+    ],
+    "version": "2.0.0"
+}
